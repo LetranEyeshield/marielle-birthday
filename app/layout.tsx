@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MARIELLE'S 7TH BIRTHDAY",
     description: "7th Birthday, Celebration, Birthday, Party, Occassion",
-    url: "https://marielle-birthday-kxif.vercel.app/",
+    url: "https://marielle-birthday.vercel.app/",
     siteName: "MARIELLE'S 7TH BIRTHDAY",
     images: [
       {

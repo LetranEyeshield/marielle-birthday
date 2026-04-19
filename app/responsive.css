@@ -1,0 +1,146 @@
+@media (max-width: 970px) {
+  .about-div p {
+    font-size: 18px;
+  }
+  .about-div {
+    width: 75%;
+    margin: -180px auto 0;
+  }
+  .parents-div {
+    margin: 60px auto 0;
+  }
+}
+@media (max-width: 950px) {
+  .about-div {
+    width: 80%;
+  }
+}
+@media (max-width: 910px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 890px) {
+  .about-div {
+    width: 90%;
+  }
+}
+@media (max-width: 795px) {
+  .about-div {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    background: #f5f7f8;
+  }
+  .hero-header-div {
+    position: static;
+    background: #f5f7f8;
+  }
+  .about-div {
+    margin: 0 auto 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  .parents-div {
+    margin: 0 auto 0;
+  }
+  .about-div p {
+    font-size: 14px;
+  }
+  .parents-div {
+    padding: 10px 20px 25px;
+  }
+  .parents-div img {
+    margin: 15px auto 20px;
+  }
+  .parents-div h2,
+  .gallery-div h2,
+  .candles-div h2,
+  .balloons-div h2,
+  .treasures-div h2,
+  .event-div h2 {
+    font-size: 40px;
+  }
+  .gallery-div {
+    padding: 10px 20px 15px;
+  }
+  .candles-div {
+    padding: 10px 20px 15px 20px;
+  }
+  .gallery-image-wrapper {
+    margin-top: 10px;
+  }
+  .treasures-div {
+    padding: 10px 20px 15px 20px;
+  }
+  .gallery-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rsvp-div h3 {
+    font-size: 20px;
+  }
+  .rsvp-div .modal-container {
+    padding: 15px 20px 20px;
+    width: 90%;
+  }
+  .rsvp-div input,
+  .rsvp-div select,
+  .rsvp-div textarea {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .rsvp-div label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .btn-primary, .btn-secondary {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 710px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 515px) {
+
+}
+@media (max-width: 460px) {
+  .event-div iframe {
+    width: 90%;
+    height: 230px;
+    margin: 20px auto 0;
+  }
+  .event-div p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 440px) {
+  .hero h1 {
+    font-size: 25px;
+  }
+  .hero h2 {
+    font-size: 18px;
+  }
+}

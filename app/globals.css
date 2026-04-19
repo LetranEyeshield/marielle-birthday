@@ -1,26 +1,315 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.hero-header-div {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.hero h1 {
+  font-size: 60px;
+  color: #046fc7;
+}
+.hero h2 {
+  font-size: 50px;
+  /* color: #4DDCFF; */
+  color: #c89b5d;
+}
+.about-div {
+  width: 60%;
+  /* background: rgba(200, 155, 93, 0.5); */
+  background: rgba(200, 155, 93, 0.4);
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  margin: -250px auto 0;
+  z-index: 1;
+}
+.about-div p {
+  font-size: 20px;
+  color: #000000;
+  text-shadow: 1px 1px 2px #046fc7;
+}
+.parents-div {
+  width: 100%;
+  background: #046fc7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 90px auto 0;
+  padding: 20px 20px 40px 20px;
+}
+.parents-div h2 {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #c89b5d;
+  font-size: 50px;
+}
+.parents-div h3 {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #c89b5d;
+  font-size: 28px;
+  margin: 20px auto 0;
+  line-height: 15px;
+}
+.parents-div img {
+  margin: 30px auto 30px;
+  width: 450px;
+  border-radius: 10px;
+}
+/* gallery */
+.gallery-div {
+  width: 100%;
+  padding: 20px;
+}
+.gallery-div h2 {
+  color: #046fc7;
+  font-size: 50px;
+}
+.gallery-image-wrapper {
+  margin-top: 20px;
+}
+.pagination-div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.pagination-div button {
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.pagination-div button:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+/* 7 candles */
+.candles-div {
+  width: 100%;
+  padding: 20px;
+  background: #f6e7c1;
+}
+.candles-div h2 {
+  color: #046fc7;
+  font-size: 50px;
+}
+/* 7 balloons */
+.balloons-div {
+  width: 100%;
+  padding: 20px;
+  background: #046fc7;
+}
+.balloons-div h2 {
+  color: #ffffff;
+  font-size: 50px;
+}
+/* 7 treasures */
+.treasures-div {
+  width: 100%;
+  padding: 20px;
+  background: #f5f7f8;
+}
+.treasures-div h2 {
+  color: #046fc7;
+  font-size: 50px;
+}
+/* event details */
+.event-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background: #c89b5d;
+}
+.event-div h2 {
+  color: #ffffff;
+  font-size: 50px;
+}
+.event-div p {
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #046fc7;
+}
+.event-div iframe {
+  width: 450px;
+  height: 250px;
+  margin: 20px auto 0;
+}
+/* RSVP FORM */
+.rsvp-div {
+  width: 100%;
+  padding: 30px 20px 50px 20px;
+  background: #c89b5d;
+}
+.rsvp-div h3 {
+  color: #046fc7;
+  font-size: 32px;
+  margin: 0 auto 20px;
+}
+.rsvp-div .rsvp-btn{
+  background: #046fc7;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.rsvp-div .rsvp-btn:hover {
+  background: #035aa3;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+/* Overlay (dark background) */
+.rsvp-div .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #046fc7cc; /* semi-transparent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+}
+
+/* Modal box */
+.rsvp-div .modal-container {
+  background: #f6e7c1;
+  width: 100%;
+  max-width: 500px;
+
+  padding: 24px;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-height: 90vh; /* limit height to screen */
+  overflow-y: auto; /* enable vertical scroll */
+  scroll-behavior: smooth;
+
+  animation: fadeInScale 0.3s ease;
+}
+
+/* Title */
+.rsvp-div .modal-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #046fc7; /* your theme */
+}
+
+/* Buttons container */
+.rsvp-div .modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* Primary button */
+.rsvp-div .btn-primary {
+  flex: 1;
+  background: #046fc7;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.rsvp-div .btn-primary:hover {
+  background: #035aa3;
+}
+
+/* Secondary button */
+.rsvp-div .btn-secondary {
+  flex: 1;
+  background: #ccc;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.rsvp-div .btn-secondary:hover {
+  background: #aaa;
+}
+.rsvp-div input,
+.rsvp-div select,
+.rsvp-div textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+.rsvp-div input:focus,
+.rsvp-div select:focus,
+.rsvp-div textarea:focus {
+  border-color: #046fc7;
+  outline: none;
+}
+.rsvp-div .btn-disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+/* Animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
